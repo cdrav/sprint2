@@ -3,18 +3,19 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: rgb(98, 120, 246);
 }
 
 
 .banner {
     width: 100%;
     height: 100px; 
-    overflow:scroll
+    overflow:initial
 }
 
 .banner img {
-    width: 100%;
-    height: auto; 
+    width: 70%;
+    height: 20px; 
     object-fit: cover; 
     object-position: center; 
 }
@@ -31,25 +32,56 @@ body {
 
 header {
     background-color: #333;
-    color: white;
+    color: rgb(245, 109, 109);
     padding: 1em 0;
     text-align: center;
+    
+    
 }
 
 header nav ul {
     list-style: none;
     display: flex;
     justify-content: left;
+  
+  
+    
+
 }
 
 header nav ul li {
     margin: 0 15px;
+    
 }
 
 header nav ul li a {
-    color: white;
-    text-decoration: none;
+    color:  rgb(245, 109, 109);
+    text-decoration:solid
+  
+   
 }
+
+
+    .images-with-text {
+        display: flex;
+        flex-direction:column;
+        align-items: flex-start;
+        padding: 20px;
+    }
+    
+    .images-with-text .item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 20px;
+        
+
+
+}
+
+
+
 
 .banner img {
     width: 100%;
@@ -58,11 +90,14 @@ header nav ul li a {
 
 main {
     padding: 20px;
+    
+
 }
 
 main section {
     margin-bottom: 20px;
-}
+    text-align: center;
+}   
 
 footer {
     background-color: #333;
@@ -88,4 +123,5 @@ footer {
     margin: 10px;
     padding: 20px;
     border: 1px solid #ccc;
+    
 }
