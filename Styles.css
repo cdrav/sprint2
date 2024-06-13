@@ -8,8 +8,8 @@
 
 .banner {
     width: 100%;
-    height: 300px; 
-    overflow: hidden; 
+    height: 100px; 
+    overflow:scroll
 }
 
 .banner img {
@@ -39,7 +39,7 @@ header {
 header nav ul {
     list-style: none;
     display: flex;
-    justify-content: center;
+    justify-content: left;
 }
 
 header nav ul li {
