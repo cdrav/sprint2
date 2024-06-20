@@ -294,3 +294,67 @@ section ul li::before {
 .right-column button:hover {
     background-color: #d33;
 }
+
+/* Styles for the raffle content */
+.raffle-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.raffle-content .left-column, .raffle-content .right-column {
+    padding: 10px;
+}
+
+.raffle-content .left-column {
+    width: 40%;
+}
+
+.raffle-content .map {
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+}
+
+.raffle-content .map iframe {
+    width: 100%;
+    height: 300px;
+    border: 1px solid #fff;
+}
+
+.raffle-content .right-column {
+    width: 50%;
+    background-color: #e9d9d9;
+    padding: 20px;
+    border: 1px solid #fff;
+}
+
+.raffle-content .right-column input[type="text"],
+.raffle-content .right-column textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #fff;
+    background-color: #7cb5fc;
+    color: #fff;
+}
+
+.raffle-content .right-column label {
+    display: block;
+    margin: 5px 0;
+    color: #fff;
+}
+
+.raffle-content .right-column button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #444;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.raffle-content .right-column button:hover {
+    background-color: #333;
+}
