@@ -122,7 +122,7 @@ footer {
     text-align: center;
     background-color: #f88;
     padding: 10px;
-    color: #000;
+    color: #e22020;
 }
 
 /* Estilos  para la página About */
@@ -170,7 +170,67 @@ footer {
 
 .about-footer {
     text-align: center;
-    background-color:  #f88;
+    background-color:  rgb(196, 60, 60);
     padding: 10px;
     color:  rgb(9, 9, 9);
+}
+
+.more-info {
+    text-align: center;
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #e5dcde;
+    border: 1px solid #000;
+}
+
+.more-info h2 {
+    color: #1e1616;
+    font-size: 2em;
+}
+
+.more-info h3 {
+    color: #1e1616;
+    font-size: 1.5em;
+}
+
+.more-info table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.more-info table, .more-info th, .more-info td {
+    border: 1px solid #000;
+}
+
+.more-info th, .more-info td {
+    padding: 10px;
+    text-align: center;
+}
+
+.more-info th {
+    background-color: #f88;
+    color: #fff;
+}
+
+/* Additional styles for Benefits and Tips page */
+section h4 {
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+
+section ul {
+    list-style-type: none; 
+    padding-left: 0; 
+}
+
+section ul li {
+    display: flex; 
+    align-items: center; 
+    margin-bottom: 10px;
+}
+
+section ul li::before {
+    content: '•';
+    margin-right: 10px;
 }
