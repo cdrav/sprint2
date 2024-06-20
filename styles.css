@@ -1,127 +1,176 @@
-
-* {
+body {
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: rgb(236, 239, 253);
+    font-family: Arial, sans-serif;
+    background-color: #fcf2f2;
+    color: #1e1616;
 }
 
+.container {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #e5dcde;
+    padding: 10px;
+    border: 1px solid #000;
+}
+
+header {
+    text-align: center;
+    padding: 10px;
+    background-color: #e8d4d4;
+    color: #fff;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f88;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 20px;
+    background-color: #f44;
+}
+
+nav ul li a.active {
+    background-color: #000;
+}
+
+nav .logo {
+    width: 40px;
+}
+
+main {
+    text-align: center;
+    padding: 20px;
+}
+
+main section h2 {
+    margin: 0;
+    color: #0b0a0b;
+    font-size: 2em;
+}
+
+main section h3 {
+    margin: 0;
+    color: #121111;
+    font-size: 1.5em;
+}
 
 .banner {
-    width: 100%;
-    height: 100px; 
-    overflow:initial
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
 }
 
 .banner img {
     width: 70%;
-    height: 20px; 
-    object-fit: cover; 
-    object-position: center; 
-}
-
-
-
-
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-}
-
-header {
-    background-color: #333;
-    color: rgb(245, 109, 109);
-    padding: 1em 0;
-    text-align: center;
-    
-    
-}
-
-header nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: left;
-  
-  
-    
-
-}
-
-header nav ul li {
-    margin: 0 15px;
-    
-}
-
-header nav ul li a {
-    color:  rgb(245, 109, 109);
-    text-decoration:solid
-  
-   
-}
-
-
-    .images-with-text {
-        display: flex;
-        flex-direction:column;
-        align-items: flex-start;
-        padding: 20px;
-    }
-    
-    .images-with-text .item {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-        margin-bottom: 20px;
-        
-
-
-}
-
-
-
-
-.banner img {
-    width: 100%;
     height: auto;
+    max-width: 500px; 
+    object-fit: cover; 
+    border: 1px solid #000; 
 }
 
-main {
-    padding: 20px;
-    
-
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px 0;
 }
 
-main section {
+.content p {
+    color: #000;
+    font-size: 1.2em;
     margin-bottom: 20px;
-    text-align: center;
-}   
+    flex-direction:column-reverse ;
+}
+
+.second-image {
+    display: flex;
+    justify-content: right;
+    flex-direction:row-reverse;
+}
+
+.second-image img {
+    width: 50%;
+    height: auto;
+    max-width: 300px; 
+    border: 1px solid #000; 
+}
 
 footer {
-    background-color: #333;
-    color: white;
     text-align: center;
-    padding: 1em 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+    background-color: #f88;
+    padding: 10px;
+    color: #000;
 }
 
+/* Estilos  para la página About */
+.about-container {
+    text-align: center;
+    padding: 20px;
+    background-color:  rgb(233, 223, 223);
+    border: 1px solid #000;
+}
 
-.container {
+.about-container h2 {
+    color: rgb(10, 9, 9);
+    font-size: 2em;
+}
+
+.about-container p {
+    color: rgb(8, 7, 7);
+    font-size: 1.5em;
+}
+
+.about-images-with-text {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-images-with-text .about-item {
+    display: flex;
     align-items: center;
     margin: 20px 0;
 }
 
-.container > div {
-    flex: 1 1 300px;
-    margin: 10px;
-    padding: 20px;
-    border: 1px solid #ccc;
-    
+.about-images-with-text .about-image {
+    width: 300px;
+    height: auto;
+    border: 1px solid #000; 
+    margin-right: 20px;
+}
+
+.about-images-with-text .about-text {
+    color: #000;
+    font-size: 1.2em;
+}
+
+.about-footer {
+    text-align: center;
+    background-color:  #f88;
+    padding: 10px;
+    color:  rgb(9, 9, 9);
 }
